@@ -7,7 +7,7 @@ Two different models can be found in the models/ folder. "scanned" works best wi
 
 The script classifier_fcnn.py can be used to classify single images. To classify multiple images use 
 
-for i in /directory/to/multiple/images/*; do python classifier_fcnn.py -i $i -o /directory/to/multiple/images/ --enableCRF; done
+'''for i in /directory/to/multiple/images/*; do python classifier_fcnn.py -i $i -o /directory/to/multiple/images/ --enableCRF; done'''
 
 
 
