@@ -28,18 +28,7 @@ def separate_red(image):
     return(red)
 
 path = "C:/Users/mahsa/Desktop/From server/handwritten_photo/bin_mf_b/"
-#for image in glob.glob(path + "microfilm/out_crf/*_out_crf.png"):
-#    print("green layer seperated from " + os.path.basename(image))
-#    cv2.imwrite(path + "microfilm/crf_green/"+os.path.basename(image).split(".png")[0]+"_green.png", separate_green(image))
-#    print("red layer seperated from " + os.path.basename(image))
-#    cv2.imwrite(path + "microfilm/crf_red/"+os.path.basename(image).split(".png")[0]+"_red.png", separate_red(image))
-#print("seperation finished!")
-#for image in glob.glob(path + "microfilm/out/*_out.png"):
-#    print("green layer seperated from " + os.path.basename(image))
-#    cv2.imwrite(path + "microfilm/green/"+os.path.basename(image).split(".png")[0]+"_green.png", separate_green(image))
-#    print("red layer seperated from " + os.path.basename(image))
-#    cv2.imwrite(path + "microfilm/red/"+os.path.basename(image).split(".png")[0]+"_red.png", separate_red(image))
-#print("seperation finished!")
+
 for image in glob.glob(path + "out_crf/*_out_crf.png"):
     print("green layer seperated from " + os.path.basename(image))
     cv2.imwrite(path + "crf_green/"+os.path.basename(image).split(".png")[0]+"_green.png", separate_green(image))
